@@ -1,0 +1,12 @@
+.example-card {
+    max-width: 100%;
+  }
+  mat-grid-tile {
+    background: lightblue;
+  }
+
+
+  .icon-star{
+    font-size: 40Px;
+    color: orange;
+}

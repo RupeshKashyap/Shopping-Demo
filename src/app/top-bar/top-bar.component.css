@@ -1,0 +1,31 @@
+.cart-icon{
+    margin-left: 90%;
+}
+.icon-cart{
+    font-size: 40Px;
+    color: white;
+}
+.icon-star{
+    font-size: 40Px;
+    color: yellow;
+}
+
+.top-cart{
+    position: absolute;
+    left: 11px;
+    top: 7px;
+    text-align: center;
+    border-radius: 7px;
+    width: 18px;
+    height: 18px;
+    background-color: #ff6161;
+    border: 1px solid #fff;
+    font-weight: 400;
+    color: #f0f0f0;
+    line-height: 16px;
+    font-size: 12px;
+    margin-left: 90% ;
+}
+.cart-item-icon{
+        margin-left: 90;
+}
