@@ -1,28 +1,46 @@
-<div class=" product-list">
-    <mat-card class="example-card">
+<div class=" product-list container">
+    <mat-card class="">
         <mat-card-header>
             <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Products</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <mat-card-title>Products
+                <span><input> </span>
+            </mat-card-title>
+            <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
         </mat-card-header>
-    
-        <mat-card-content *ngFor="let product of products;">
-           <mat-card>
-                <mat-card-content class="pro">
-                   <h3>
-                    {{product.name}}
-                   </h3>
-                   <p *ngIf="product.description">
-                    description : {{product.description}}
-                     </p>
-                </mat-card-content>
-                <mat-card-actions class="">
-                    <button mat-button color="primary" (click)="addToCart(product)"><h1><i class="material-icons icon-star">add_shopping_cart</i></h1></button>
-                    <!-- <button mat-button>LIKE</button>
+        <div class="row">
+            <mat-card-content class="col-sm-4 example-card" *ngFor="let product of products;">
+
+                <div class="">
+                    <mat-card>
+                        <mat-card-content class="pro">
+
+                            <img class="img-property" mat-card-image src="{{product.img_url}}" alt="prduct.image">
+
+                            <h1>
+                                {{product.name}}
+                            </h1>
+                            <div class="row">
+                                <div>
+                                    <h3><b>₹ {{product.price - ((product.price*product.discount)/100)}}
+                                        </b><span><del>{{product.price}}</del></span> <span class="discount-color">
+                                            {{product.price}} % off</span></h3>
+                                </div>
+                            </div>
+                            <p *ngIf="product.description">
+                                description : {{product.description}}
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions class="">
+                            <button mat-button color="primary" (click)="addToCart(product)">
+                                <h1><i class="material-icons icon-star">add_shopping_cart</i></h1>
+                            </button>
+                            <!-- <button mat-button>LIKE</button>
                     <button mat-button>SHARE</button> -->
-                </mat-card-actions>
-            </mat-card>
-            
-        </mat-card-content>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+
+            </mat-card-content>
+        </div>
     </mat-card>
 </div>

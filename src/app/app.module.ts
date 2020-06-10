@@ -14,7 +14,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CartService } from './cart.service';
-
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,8 @@ import { CartService } from './cart.service';
     MatButtonModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgMultiSelectDropDownModule,
+    CommonModule
   ],
   providers: [CartService],
   bootstrap: [AppComponent]

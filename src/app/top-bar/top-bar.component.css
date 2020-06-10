@@ -29,3 +29,7 @@
 .cart-item-icon{
         margin-left: 90;
 }
+.top-bar
+{
+    overflow: hidden;
+}

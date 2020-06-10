@@ -10,3 +10,11 @@
     font-size: 40Px;
     color: orange;
 }
+.discount-color{
+  color: green;
+}
+.img-property{
+  height: 400px;
+  width: 80%;
+  margin-left: 10%;
+}

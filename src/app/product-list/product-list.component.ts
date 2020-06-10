@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { products } from '../products';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from '../cart.service';
-import { TopBarComponent } from '../top-bar/top-bar.component';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
